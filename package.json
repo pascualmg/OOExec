@@ -1,0 +1,28 @@
+{
+  "name": "ooexec",
+  "version": "1.0.1",
+  "description": "rxjs observable of a system command (child_process exec)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pascualmg/OOExec.git"
+  },
+  "keywords": [
+    "observable",
+    "rxjs",
+    "command",
+    "system",
+    "line",
+    "shellscript",
+    "node"
+  ],
+  "author": "Pascual Muñoz Galián",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pascualmg/OOExec/issues"
+  },
+  "homepage": "https://github.com/pascualmg/OOExec#readme"
+}
