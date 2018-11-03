@@ -1,15 +1,16 @@
 # OOExec , Shell scripting in node with observables.
 
-##installation
+## installation
 ```bash
 npm install ooexec --save
 ```
 
 
-##basic use
+## basic use
 ```javascript
+const {of} = require('rxjs')
+const {flatMap} = require('rxjs/operators')
 var OOExec = require('ooexec')
-
 of(true).pipe(
   flatMap(() => OOExec('echo hellow world')),
   flatMap(() => OOExec('docker-compose stop', {pwd:'/home/myuser/src/docker'})),
