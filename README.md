@@ -1,7 +1,12 @@
 # OOExec , Shell scripting in node with observables.
 
+##installation
+```bash
+npm install ooexec --save
+```
 
 
+##basic use
 ```javascript
 var OOExec = require('ooexec')
 
