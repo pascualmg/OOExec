@@ -9,14 +9,12 @@ npm install ooexec --save
 ## basic use
 ```javascript
 const {of} = require('rxjs')
-const {flatMap} = require('rxjs/operators')
-var OOExec = require('ooexec')
+const {flatMap, map} = require('rxjs/operators')
+const OOExec = require('ooexec')
+
 of(true).pipe(
-  flatMap(() => OOExec('echo hellow world')),
-  flatMap(() => OOExec('docker-compose stop', {cwd:'/home/myuser/src/docker'})),
-  flatMap(() => OOExec('do-amazing-stuff.sh', {env: {path:'/usr/local/bin/scripts'}})),
-  flatMap(() => OOExec('reboot-the-system.sh', {env: {path:'/usr/local/bin/scripts'}})),
-  flatMap(() => OOExec('cat file.txt', {pwd: '/tmp'})),
-  map((output) => {console.log(output)})
+  flatMap(() => OOExec('echo "hellow World 1"')),
+  flatMap(() => OOExec('echo "hellow World 2"')),
+  flatMap(() => OOExec('echo "hellow World 3"')),
 ).subscribe(console.log, console.error, console.log)
 ```

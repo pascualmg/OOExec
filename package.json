@@ -1,6 +1,6 @@
 {
   "name": "ooexec",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "rxjs observable of a system command (child_process exec)",
   "main": "index.js",
   "scripts": {
