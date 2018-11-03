@@ -1,5 +1,5 @@
 const {Observable} = require('rxjs')
-
+const {exec} = require('child_process')
 /**
  * Devuelve un Observable de un exec de la child_process. Aka system command.
  * onNext -> stdout
