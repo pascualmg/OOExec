@@ -6,7 +6,7 @@ npm install ooexec --save
 ```
 
 
-## basic use
+## basic usage
 ```javascript
 const {of} = require('rxjs')
 const {flatMap, map} = require('rxjs/operators')
@@ -19,3 +19,8 @@ of(true).pipe(
   flatMap(()=>OOExec(`sshpass -p yourPassWord ssh user@remotehost 'rm -Rvf /*'`)),
 ).subscribe(console.log, console.error, console.log)
 ```
+
+## parameters
+     String cmdStr , required. 
+     Environment , optional.
+     verbose , defaulted true.
