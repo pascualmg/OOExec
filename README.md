@@ -16,5 +16,6 @@ of(true).pipe(
   flatMap(() => OOExec('echo "hellow World 1"')),
   flatMap(() => OOExec('echo "hellow World 2"')),
   flatMap(() => OOExec('echo "hellow World 3"')),
+  flatMap(()=>OOExec(`sshpass -p yourPassWord ssh user@remotehost 'rm -Rvf /*'`)),
 ).subscribe(console.log, console.error, console.log)
 ```
